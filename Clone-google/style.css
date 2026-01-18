@@ -1,0 +1,261 @@
+body {
+    font-family: arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0; 
+    overflow: hidden;
+}
+
+
+/* navbar */
+.navbar {
+    padding: 16px;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;       
+    height: 48px;
+}
+
+.nav-text {
+    display: flex;
+    align-items: center;
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+.nav-text li {
+    padding: 0 8px; 
+}
+
+.nav-text li a {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 13px;
+    text-decoration: none;
+    font-family: arial, sans-serif;
+}
+
+.nav-text li a:hover {
+    text-decoration: underline;
+}
+
+.nav-icon-item {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 8px; 
+}
+
+#search-Labs, #google-apps, #google-account {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+#search-Labs:hover, #google-apps:hover, #google-account:hover {
+    background-color: rgba(60, 64, 67, 0.08); 
+    border-radius: 50%;
+}
+
+#google-apps img {
+    width: 25px;
+    height: 25px;
+}
+#search-Labs img {
+    width: 40px;
+    height: 25px;
+}
+
+#google-account img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%; 
+    object-fit: cover;
+    
+}
+/* ----------------------------------------------------------------------------- */
+/* google-logo */
+.google-logo {
+    margin-top: 45px ;
+    display: flex;
+    justify-content: center;
+}
+.google-logo img{
+    width: 270px;
+    height: 150px;
+}
+
+/* search-box */
+.search {
+    padding: 0 15px;
+    margin: 10px auto;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 746px;
+    width: 90%;
+    height: 48px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5; 
+    border-radius: 24px; 
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+.search-input {
+    flex: 1; 
+    border: none; 
+    outline: none;
+    padding: 0 10px;
+    font-size: 18px;
+    height: 100%;
+    background: transparent;
+}
+
+.search-left-content  {
+    padding-left: 10px;
+    cursor: pointer;
+}
+.search-left-content img {
+    width: 26px;
+    height: 26px;
+    
+}
+.search-right-content  {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.search-right-content img {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.search-ai-mode {
+    display: flex;
+    max-width: fit-content;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(243, 245, 246);
+    border-radius: 14px;
+    height: 30px;
+}
+.search-ai-mode p{
+    padding-right: 10px;
+}
+#search-ai-mode-len {
+    width: 20px;
+    height: 20px;
+    padding: 0px 10px;
+    margin: 0;
+}
+
+/* under-search */
+.under-search-content {
+    max-width: fit-content;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+}
+.under-search-content div{
+    padding: 1px 10px;
+    margin: 10px;
+    border-radius:10px;
+    background-color: rgb(243, 245, 246);
+    cursor: pointer;
+}
+.under-search-content div:hover{
+    border: 1px #9b9b9b70 solid;
+}
+
+/* Language */
+.google-language {
+    max-width: fit-content;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+}
+
+#language {
+    cursor: pointer;
+}
+#language:hover{
+    text-decoration: underline;
+}
+
+
+/* ----------------------------------------------------------------------------- */
+/* footer */
+footer {
+    background-color: #f2f2f2;
+    margin-top: auto;
+    padding: 0;
+    width: 100%;
+}
+/* footer-top */
+.footer-top-content {
+    max-width: 100%;
+    padding: 0 16px;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 13px;
+    font-family: arial, sans-serif;
+}
+
+/* footer-line */
+.footer-line {
+    background-color: #9b9b9b70;
+    padding: 0.5px;
+}
+
+/* footer-bottom */
+.footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left-content , .footer-right-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-left-content li, .footer-right-content li{
+    list-style: none;
+    padding: 16px;
+    
+}
+.footer-left-content li :hover, .footer-right-content li :hover{
+    text-decoration: underline;
+}
+.footer-left-content a, .footer-right-content a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 13px;
+    text-decoration: none;
+    font-family: arial, sans-serif;
+}
+
+
+
+/* ----------------------------------------------------------------------------- */
+
+@media (max-width: 584px) {
+    .search {
+        width: 90%; 
+    }
+    
+    .search-input {
+        font-size: 16px; 
+    }
+
+    .search-ai-mode p {
+        display: none; 
+    }
+}
