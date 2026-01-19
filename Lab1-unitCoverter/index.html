@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Conversions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="home">
+        <header>
+            <h1><b>Unit Conversions</b></h1>
+        </header>
+        <nav class="topdiv">
+            <a href="#temperature"><button class="topmenu">Temperature</button></a>
+            <a href="#weight"><button class="topmenu">Weight</button></a>
+            <a href="#distance"><button class="topmenu">Distance</button></a>
+        </nav>
+    </section>
+    <div class="all-conversion-sections">
+        <section id="temperature" class="b temperature">
+            <div id="tmp" >
+                <figure>
+                    <img src="./assets/img/termo.png" alt="termo-pic" style="width: 200px;">
+                    <figcaption>Celcius to Fahrenheit Conversion</figcaption>
+                </figure>
+                <article>
+                    <fieldset>
+                        <legend><h1>Temperature</h1></legend>
+                        <p>Celscius</p>
+                        <label for="celsius"></label>
+                        <input type="number" id="celsius">
+                        <div class="convert">
+                            <button onclick="toFahrenheit()">Convert</button>
+                        </div>
+                        <label for="fahrenheit"></label>
+                        <input type="text" id="fahrenheit" readonly>
+                        <p>Fahrenheit</p>
+                    </fieldset>
+                </article>
+                <aside>To convert celcius to fahrenheit yourself, use this formula replacing the 'C' with your temperature in celcius: F = (C x 9/5) + 32</aside>
+            </div>
+        </section>
+        <section id="weight" class="b weight">
+            <div id="wgt">
+                <figure>
+                    <img src="./assets/img/weight.png" alt="weight-pic" style="width: 200px;">
+                    <figcaption>Kilograms to Pounds Conversion</figcaption>
+                </figure>
+                <article>
+                    <fieldset>
+                        <legend><h1>Weight</h1></legend>
+                        <p>Kilograms</p>
+                        <label for="kilogram"></label>
+                        <input type="number" id="kilogram">
+                        <div class="convert">
+                            <button onclick="toPound()">Convert</button>
+                        </div>
+                        <label for="pound"></label>
+                        <input type="text" id="pound">
+                        <p>Pounds</p>
+                    </fieldset>
+                </article>
+                <aside>To convert kilograms to pounds yourself, use this formula replacing the `kg` with your weight in kilograms: kg x 2.205</aside>
+            </div>
+        </section>
+        <section id="distance" class="b distance">
+            <div id="dst">
+                <figure>
+                    <img src="./assets/img/speedo.png" alt="speedo-pic" style="width: 200px;">
+                    <figcaption>Kilometer to Mile Conversion</figcaption>
+                </figure>
+                <article>
+                    <fieldset>
+                        <legend><h1>Distance</h1></legend>
+                        <p>Kilometers</p>
+                        <label for="kilometer"></label>
+                        <input type="number" id="kilometer">
+                        <div class="convert">
+                            <button onclick="toMile()">Convert</button>
+                        </div>
+                        <label for="mile"></label>
+                        <input type="text" id="mile">
+                        <p>Miles</p>
+                    </fieldset>
+                </article>
+                <aside>To convert kilometers to miles yourself, use this formula replacing the `km` with your distance in kilometers: km ÷ 1.609</aside>
+            </div>
+        </section>
+    </div>
+    <div id="go-home" class="iconbutton">
+        <a href="#home">
+            <button>
+                <img src="./assets/icon/home.png" alt="home-pic">
+            </button>
+        </a>
+    </div>
+    <footer>Learn more about HTML/CSS/JS as a part of INT250 CSS Framework</footer>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+* {
+    margin: 10px;
+}
+
+body {
+    background-color: black;
+}
+
+#home {
+    margin: -1 0;
+    padding-bottom: 2cm;
+    background-color: #553592;
+}
+
+header {
+    font-size: 30px;
+    color: #DAB1DA;
+    float: left;
+    padding-left: 2cm;
+}
+
+nav {
+    float: right;
+    padding-right: 1cm;
+}
+
+nav button {
+    color: #D3D3D3;
+    background-color: #301934;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 1mm;
+    font-size: 20px;
+}
+
+nav button:hover {
+    color: white;
+    font-weight: bold;
+    background-color: purple;
+}
+
+.all-conversion-sections {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+
+figure {
+    float: left;
+    justify-self: auto;
+    width: 200px;
+}
+
+img {
+    width: 200px;
+}
+
+figcaption {
+    color: black;
+    font-size: 17px;
+    text-align: center;
+}
+
+.convert button {
+    font-size: 20px;
+    border: transparent;
+    border-radius: 40px;
+    width: fit-content;
+    background-color: #90EE90; 
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.b {
+    border-top: solid 20px;
+    border-radius: 10px;
+    background-color: white;
+    width: 600px;
+    height: 400px;
+    margin: 25px 0;
+    display: flex;
+}
+
+#temperature {
+    border-top-color: green;
+}
+
+#weight {
+    border-top-color: coral;
+}
+
+#distance {
+    border-top-color: cyan;
+}
+
+#go-home {
+    position: fixed;
+    left: 0;
+    bottom: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: cyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0; 
+    z-index: 999; 
+}
+
+#go-home img {
+    width: 30px; 
+    height: auto;
+}
+
+#go-home button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: #FFB6C1;
+    margin-top: 20px;
+}
