@@ -43,6 +43,7 @@ nav button:hover {
     align-items: center;
     justify-content: center;
     display: grid;
+    width: 100%;
 }
 
 figure {
@@ -77,8 +78,9 @@ figcaption {
     background-color: white;
     width: 600px;
     height: 400px;
-    margin: 25px 0;
+    margin: 25px auto;
     display: flex;
+    
 }
 
 #temperature {
@@ -127,3 +129,8 @@ footer {
     background-color: #FFB6C1;
     margin-top: 20px;
 }
+
+/* legend {
+    font-size: 30px;
+    font-weight: bold;
+} */
