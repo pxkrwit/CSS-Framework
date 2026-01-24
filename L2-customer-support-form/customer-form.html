@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<style>
+    .mb-3{
+        margin: 30px;
+    }
+
+    .contact {
+        margin-left: 30px;
+    }
+
+    .selc {
+        width: 200px;
+        margin-left: 10px;
+    }
+
+    .bottom-btn {
+        margin-left: 30px;
+    }
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Help
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Technical documentation</a></li>
+                    <li><a class="dropdown-item" href="#">Talk to us</a></li>
+                </ul>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            </div>
+        </div>
+    </nav>
+    <form action="">
+        <div class="mb-3" style="width: 500px;">
+            <label for="exampleFormControlInput1" class="form-label"><b>Full name</b></label>
+            <input type="text" class="form-control" id="exampleFormControlInput1">
+        </div>
+        <div class="mb-3" style="width: 500px;">
+            <label for="exampleFormControlInput1" class="form-label"><b>Email address</b></label>
+            <input type="email" class="form-control" id="exampleFormControlInput1">
+            <p style="color: rgb(170, 170, 170);">We'll never share your email with anyone else.</p>
+        </div>
+        <div class="contact" style="display: flex;">
+            <label for="selc" style="display: inline-block;"><b>Reason for contacting us: </b></label>
+            <select class="form-select selc" aria-label="Default select example" id="selc">
+                <option value="1">Billing</option>
+                <option value="2">Technical Support</option>
+                <option value="3">Complaints and Feedback</option>
+            </select>
+        </div>
+        <div class="mb-3" style="width: 500px;">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+        </div>
+        <div class="bottom-btn">
+            <input class="btn btn-primary" type="submit" value="Submit">
+            <input class="btn btn-secondary" type="reset" value="RESET">
+        </div>
+    </form>
+</body>
+</html>
