@@ -1,0 +1,40 @@
+body {
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+main .text-white {
+    color: #212529 !important; 
+}
+
+main .form-control {
+    background-color: #f8f9fa; 
+    border: 1px solid #dee2e6;
+    color: #212529;
+}
+
+
+main .input-group-text svg {
+    color: #6c757d !important;
+}
+
+
+.main-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+footer {
+    width: 100%;
+    max-width: 900px; 
+    margin: 0 auto;  
+    font-size: 0.85rem;
+}
+
