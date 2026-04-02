@@ -1,0 +1,113 @@
+@import 'tailwindcss';
+
+@layer components {
+    
+  .card {
+    @apply py-7 px-5 bg-white rounded-xl shadow border border-gray-200 h-auto flex flex-col gap-2;
+
+    h1 {
+      @apply font-bold text-xl;
+    }
+    
+  }
+  .description {
+    @apply text-gray-600 text-xs;
+  } 
+
+  /* Buttons */
+  .btn {
+    @apply py-3 px-5 rounded-xl text-xs cursor-pointer;
+
+    &.btn-primary {
+      @apply text-white  font-medium bg-blue-600 hover:bg-blue-700;
+    }
+    &.btn-secondary {
+      @apply text-white font-medium bg-gray-700 hover:bg-gray-600;
+    }
+    &.btn-outline {
+      @apply text-blue-600 font-medium bg-transparent border border-blue-600 hover:bg-blue-200;
+    }
+    &.btn-disabled {
+      @apply text-gray-600 font-medium bg-slate-300 cursor-not-allowed;
+    }
+  }
+
+    /* Badges */
+    .bage-success {
+      @apply text-green-700 bg-green-100 px-4 py-2 rounded-full text-sm font-medium;
+    }
+    .bage-warning {
+      @apply text-yellow-700 bg-yellow-100 px-4 py-2 rounded-full text-sm font-medium;
+    }
+    .bage-error {
+      @apply text-red-700 bg-red-100 px-4 py-2 rounded-full text-sm font-medium;
+    }
+    .bage-neutral {
+      @apply text-gray-700 bg-gray-100 px-4 py-2 rounded-full text-sm font-medium;
+    }
+
+    /* Alerts */
+    .alert {
+        @apply px-4 py-3 rounded-lg border;
+        
+        p {
+            @apply text-xs;
+        }
+        h3 {
+            @apply font-bold text-sm mb-1;
+        }
+
+        &.alert-success {
+            @apply bg-green-100 border-green-400 text-green-700;
+        }
+        &.alert-warning {
+            @apply bg-yellow-100 border-yellow-400 text-yellow-700;
+        }
+        &.alert-error {
+            @apply bg-red-100 border-red-400 text-red-700;
+        }
+
+    }
+
+    .content-main {
+        @apply bg-slate-200 px-7 py-5 rounded-xl flex flex-col items-start gap-2;
+        h2 {
+            @apply text-gray-800 font-bold text-base;
+        }
+        p {
+            @apply text-gray-600 text-sm;
+        }
+    }
+    .content-summary {
+        @apply bg-blue-600 px-7 py-5 rounded-xl flex flex-col items-start gap-2;
+        h2 {
+            @apply text-white font-bold text-base;
+        }
+        p {
+            @apply text-white text-sm;
+        }
+        button {
+            @apply text-blue-600 bg-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-200 cursor-pointer;
+        }
+    }
+
+    .content-card {
+        @apply  bg-slate-100 border border-gray-400 rounded-lg p-4 ;
+
+        > div {
+            @apply flex flex-col gap-4;
+        }
+
+        div div {
+            @apply flex justify-between items-center;
+            
+        }
+        div h2 {
+            @apply text-lg font-bold;
+        }
+        
+        div p {
+            @apply text-gray-600 text-sm;
+        }
+    }
+}
