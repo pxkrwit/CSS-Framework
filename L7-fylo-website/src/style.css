@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+/* ─── Fylo Design Tokens (Tailwind v4 @theme) ─── */
+@theme {
+  /* Colors */
+  --color-fylo-dark-blue:    hsl(218, 28%, 13%);   /* main dark bg */
+  --color-fylo-dark-blue-2:  hsl(216, 53%, 9%);    /* footer / FAQ bg */
+  --color-fylo-dark-blue-3:  hsl(219, 30%, 18%);   /* cards */
+  --color-fylo-cyan:         hsl(176, 68%, 64%);   /* accent */
+  --color-fylo-light-bg:     hsl(0, 0%, 97%);      /* light-mode main bg */
+  --color-fylo-light-text:   hsl(243, 87%, 12%);   /* light-mode headings */
+
+  /* Typography */
+  --font-heading: "Raleway", sans-serif;
+  --font-body:    "Open Sans", sans-serif;
+}
+
+/* ─── Base ─── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: #d1d5db;
+    margin: 0;
+    padding: 0;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+/* ─── Component Classes ─── */
+@layer components {
+
+  /* ── Buttons ── */
+  .btn-primary {
+    @apply inline-block px-10 py-3 rounded-full font-bold text-white text-sm;
+    background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    transition: opacity 0.2s ease;
+  }
+  .btn-primary:hover {
+    opacity: 0.85;
+  }
+
+  .btn-cta {
+    @apply px-8 py-3 rounded-full font-bold text-white text-sm whitespace-nowrap;
+    background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    transition: opacity 0.2s ease;
+  }
+  .btn-cta:hover {
+    opacity: 0.85;
+  }
+  .btn-cta:disabled {
+    @apply opacity-50 cursor-not-allowed;
+  }
+
+  /* ── Form ── */
+  .input-field {
+    @apply w-full px-6 py-3 rounded-full text-sm border border-transparent outline-none;
+    transition: border-color 0.2s ease;
+  }
+  .input-field:focus {
+    border-color: var(--color-fylo-cyan);
+  }
+
+  /* ── Navbar links ── */
+  .nav-link {
+    @apply text-sm transition-colors duration-200;
+  }
+  .nav-link:hover {
+    color: var(--color-fylo-cyan);
+    @apply underline;
+  }
+
+  /* ── "See how Fylo works" arrow link ── */
+  .fylo-link {
+    @apply inline-flex items-center gap-2 text-sm pb-1 border-b;
+    color: black ;
+    border-color: black;
+    transition: opacity 0.2s ease;
+  }
+  .fylo-link:hover {
+    opacity: 0.75;
+  }
+
+  /* ── Footer ── */
+  .footer-link {
+    @apply block mb-3 text-sm text-gray-300 transition-colors duration-200;
+  }
+  .footer-link:hover {
+    color: var(--color-fylo-cyan);
+  }
+
+  .social-btn {
+    @apply flex items-center justify-center w-8 h-8 rounded-full border transition-colors duration-200;
+    border-color: #6b7280;
+  }
+  .social-btn:hover {
+    border-color: var(--color-fylo-cyan);
+  }
+
+  /* ── Feature card ── */
+  .feature-card {
+    @apply text-center px-6;
+  }
+
+  /* ── Testimonial card ── */
+  .testimonial-card {
+    @apply rounded-lg p-6 md:p-8;
+  }
+
+  /* ── FAQ accordion ── */
+  .faq-item {
+    @apply border-b py-5;
+    border-color: #4b5563;
+  }
+
+  .faq-question {
+    @apply flex items-center justify-between gap-4 font-bold text-sm cursor-pointer;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  .faq-question:hover {
+    color: var(--color-fylo-cyan);
+  }
+
+  .faq-answer {
+    @apply mt-4 text-sm leading-relaxed text-gray-300;
+    margin-left: 0;
+  }
+}
